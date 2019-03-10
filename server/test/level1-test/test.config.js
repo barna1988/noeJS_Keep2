@@ -1,5 +1,4 @@
 //  Test Configuration Object
-//  Test Configuration Object
 const uuidv1 = require('uuid/v1');
 
 const USER_ID_1 = uuidv1();
@@ -28,13 +27,6 @@ const USER_2 = {
   password: USER_ID_2
 };
 
-const JWTPayload = {
-  userId: USER_ID_1,
-  username: USER_ID_1
-}
-
-const JWTsecretkey = 'jwtsecretkey';
-
 module.exports = {
   USER_ID_1,
   USER_ID_2,
@@ -42,7 +34,5 @@ module.exports = {
   NOTE_1,
   NOTE_2,
   USER_1,
-  USER_2,
-  JWTPayload,
-  JWTsecretkey
+  USER_2
 }
